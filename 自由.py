@@ -2,6 +2,10 @@
 # 匯入視覺化套件
 from visual import *
 
+import time
+
+
+
 # 1. 參數設定
 #加速度
 g = -10.    #加速度值,在 x、z 方向為 0,在 y 方向為 g=-9.8 公尺/秒^2
@@ -25,6 +29,9 @@ ball = sphere(pos =(0, h, 0), radius=0.2, color=color.blue)
 count = 1.0
 temp=10
 c=0
+
+time.sleep(5)
+
 while ball.pos.y > floor.height/2 + ball.radius:
     rate(100)
     t += dt
