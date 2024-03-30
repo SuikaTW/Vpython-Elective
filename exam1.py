@@ -2,7 +2,7 @@
 # 匯入視覺化套件
 from visual import *
 from visual.graph import *
-
+import time
 # 1. 參數設定
 g = 9.8  # 加速度
 a = vector(0,-g,0)  # 加速度值,在 x、z 方向為 0,在 y 方向為 g=-9.8 公尺/秒^2
@@ -29,7 +29,7 @@ ball = sphere(pos =(0, h, 0), radius=0.2, color=color.yellow ,make_trail= true,r
 # 速度向量及速度標籤
 vvec = arrow(shaftwidth=0.1)
 vlable = label(pos=(0,0,0), text='v', box = False, opacity=0)
-
+time.sleep(3)
 while t<20:
     rate(100)
     ball.pos = ball.pos + ballv*dt

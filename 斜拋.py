@@ -1,4 +1,5 @@
 from visual import *
+import time
 import math
 # 1. 參數設定
 #加速度
@@ -20,6 +21,7 @@ thetamax = 0
 Rmax = 0
 theta = 0
 
+time.sleep(3)
 while n<=19:
     ball = sphere(pos =(0, r + floor.height/2, 0), radius=r, color=(0.3,0.1*n,0.1*n) ,make_trail= true)
     #theta 由0度每次增加4.5度直到90度，記得把角度轉換成徑度(ex:90度 = pi*90/180)
